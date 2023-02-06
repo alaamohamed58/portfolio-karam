@@ -1,3 +1,8 @@
+import { TELEGRAM_TOKEN, CHAT_ID } from "./api.js";
+
+console.log(TELEGRAM_TOKEN);
+console.log(CHAT_ID);
+
 //form
 const contactForm = document.getElementById("contact-form");
 //inputs
@@ -5,8 +10,8 @@ const nameInputVal = contactForm.querySelector("input");
 const emailInputVal = contactForm.querySelectorAll("input")[1];
 const msgValue = contactForm.querySelector("textarea");
 let tg = {
-  token: process.env.TELEGRAM_TOKEN, // Your bot's token that got from @BotFather
-  chat_id: process.env.CHAT_ID, // The user's(that you want to send a message) telegram chat id
+  token: TELEGRAM_TOKEN, // Your bot's token that got from @BotFather
+  chat_id: CHAT_ID, // The user's(that you want to send a message) telegram chat id
 };
 //PREVENT SUBMIT BEHAVIOR
 let texts = "";

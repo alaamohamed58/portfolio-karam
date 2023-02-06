@@ -5,8 +5,8 @@ const nameInputVal = contactForm.querySelector("input");
 const emailInputVal = contactForm.querySelectorAll("input")[1];
 const msgValue = contactForm.querySelector("textarea");
 let tg = {
-  token: "6189448650:AAFvK4Mu-SETfh-kBnCXx4P2H0M1nNef-3I", // Your bot's token that got from @BotFather
-  chat_id: "1488061666", // The user's(that you want to send a message) telegram chat id
+  token: process.env.TELEGRAM_TOKEN, // Your bot's token that got from @BotFather
+  chat_id: process.env.CHAT_ID, // The user's(that you want to send a message) telegram chat id
 };
 //PREVENT SUBMIT BEHAVIOR
 let texts = "";

@@ -75,6 +75,12 @@ h6 {
 --------------------------------------------------------------*/
 #header-content {
   justify-content: space-evenly;
+  margin-top: 0px !important;
+}
+@media(max-width:768px) {
+  #header-content {
+    margin-top: 5px !important;
+  }
 }
 #header {
   transition: ease-in-out 0.3s;
@@ -214,6 +220,12 @@ h6 {
   width: 320px;
   height: 320px;
   overflow: hidden;
+}
+@media(max-width : 768px) {
+  #profile-img {
+    width: 220px;
+    height: 220px;
+  }
 }
 #profile-img img {
   width: 100%;
